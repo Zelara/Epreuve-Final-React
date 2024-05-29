@@ -1,10 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Appli.scss";
 import logo from "../images/logo.png";
 import Menu from "./Menu";
 import l12n from "../localisation/textes-statiques.json";
+
 export default function Appli() {
-  const [langue, setLangue] = useState("fr");
+  // Récupérer la langue choisie depuis localStorage ou initialiser à "fr" par défaut
+  const [langue, setLangue] = useState(localStorage.getItem("langue") || "fr");
+
+  // Mettre à jour localStorage lorsque la langue change
+  useEffect(() => {
+    localStorage.setItem("langue", langue);
+  }, [langue]);
 
   return (
     <div className="Appli">
