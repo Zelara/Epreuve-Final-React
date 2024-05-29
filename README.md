@@ -52,5 +52,6 @@ La liste des fonctionnalités à implémenter suivent, et une démo de la soluti
 ### Gardez une copie personnelle de votre travail : le dépôt de remise sur `582-4PA` sera supprimé une fois la correction complétée et les notes publiées.
 
 ## ############### BUT WAIT ... ############### ##
->Veux-tu recevoir un point boni *sans aucun effort* consenti ? Rempli le sondage d'évaluation du cours : https://forms.gle/DvTt4pbCfnXcoPVx5  🙏 💝 🙏
+>Veux-tu recevoir un point boni *facile, simple, gratuit* ? Rempli le sondage d'évaluation du cours avant de quitter la classe et je t'ajoute un point boni c'est aussi simple que ça : https://forms.gle/DvTt4pbCfnXcoPVx5  🙏 💝 🙏
+(Le sondage est entièrement anonyme ; les résultats sont accessibles uniquement à moi ; il me serve pour faire un bilan du cours ; je partage un résumé avec mes collègues enseignants pour améliorer le cours)
 ## ############################################ ##
