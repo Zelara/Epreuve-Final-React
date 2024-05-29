@@ -3,14 +3,17 @@ import './Menu.scss';
 import menuIconPlats from '../images/menu_icon_plats.png';
 import Plat from './Plat';
 import { bd, collMenu } from '../code/init'; 
-import { collection, getDocs } from 'firebase/firestore';
+import { collection, getDocs, query, orderBy } from 'firebase/firestore';
 
-export default function Menu({l12n, langue}) {
+export default function Menu({ l12n, langue }) {
   const [plats, setPlats] = useState([]);
 
   useEffect(() => {
     const fetchPlats = async () => {
-      const querySnapshot = await getDocs(collection(bd, collMenu));
+      // Crée une requête triée
+      const platsCollection = collection(bd, collMenu);
+      const platsQuery = query(platsCollection, orderBy("prix", "asc")); // Trie les documents par prix croissant
+      const querySnapshot = await getDocs(platsQuery);
       const platsData = querySnapshot.docs.map(doc => ({
         id: doc.id,
         ...doc.data()
