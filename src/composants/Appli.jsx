@@ -1,39 +1,39 @@
-import './Appli.scss';
-import logo from '../images/logo.png';
-import Menu from './Menu';
-// On importe les textes statiques pour la "localisation" (l12n)
-import l12n from '../localisation/textes-statiques.json';
-
+import React, { useState } from "react";
+import "./Appli.scss";
+import logo from "../images/logo.png";
+import Menu from "./Menu";
+import l12n from "../localisation/textes-statiques.json";
 export default function Appli() {
+  const [langue, setLangue] = useState("fr");
+
   return (
     <div className="Appli">
       <header>
         <div className="logo">
           <img src={logo} alt="Logo" />
-          <h3>Café rouge</h3>
-          {/*
-            Vous devez adapter ce code (et tout code similaire) pour prendre en 
-            compte le choix de langue fait par l'utilisateur.
-            
-            Les chaînes de textes correspondants à ces variables se trouvent  
-            dans le fichier "localisation/textes-statiques.json" 
-          */}
-          <h5>{l12n.entete.amorce['fr']}</h5>
+          <h3>Café Rouge</h3>
+          <h5>{l12n.entete.amorce[langue]}</h5>
         </div>
       </header>
-      <Menu l12n={l12n} />
+      <Menu l12n={l12n} langue={langue} />
       <footer>
-        <div className="adresse">{l12n.p2p.adresse['fr']}</div>
+        <div className="adresse">{l12n.p2p.adresse[langue]}</div>
         <div className="tel">+1 (321) 987 6543</div>
-        
-        {/* Ajoutez les gestionnaires d'événements adéquats pour changer la 
-        langue du site... */}
         <div className="choix-langue">
-          <span>fr</span>
+          <span
+            onClick={() => setLangue("fr")}
+            style={{ fontWeight: langue === "fr" ? "bold" : "normal" }}
+          >
+            fr
+          </span>
           &bull;
-          <span>en</span>
+          <span
+            onClick={() => setLangue("en")}
+            style={{ fontWeight: langue === "en" ? "bold" : "normal" }}
+          >
+            en
+          </span>
         </div>
-        
       </footer>
     </div>
   );

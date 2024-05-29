@@ -1,22 +1,35 @@
+import React, { useEffect, useState } from 'react';
 import './Menu.scss';
 import menuIconPlats from '../images/menu_icon_plats.png';
 import Plat from './Plat';
+import { bd, collMenu } from '../code/init'; 
+import { collection, getDocs } from 'firebase/firestore';
 
-export default function Menu({l12n}) {
+export default function Menu({l12n, langue}) {
+  const [plats, setPlats] = useState([]);
+
+  useEffect(() => {
+    const fetchPlats = async () => {
+      const querySnapshot = await getDocs(collection(bd, collMenu));
+      const platsData = querySnapshot.docs.map(doc => ({
+        id: doc.id,
+        ...doc.data()
+      }));
+      setPlats(platsData);
+    };
+
+    fetchPlats();
+  }, []);
+
   return (
     <div className="Menu">
       <div className="titre">
-        <img alt={l12n.menu.entrees['fr']} src={menuIconPlats} />
-        <p>{l12n.menu.entrees['fr']}</p>
+        <img alt={l12n.menu.entrees[langue]} src={menuIconPlats} />
+        <p>{l12n.menu.entrees[langue]}</p>
       </div>
-
-        {/* 
-          Vous devez générer dynamiquement l'affichage des plats à partir de 
-          Firestore. 
-        */}
-        <Plat nom="Rouleau de printemps, smoked-meat de MTL et crevettes" prix="15" />
-        <Plat nom="Rouleaux impériaux de M. Wu (porc ou végé)" prix="10" />
-        <Plat nom="Salade de papaye épicée" prix="13" />
+      {plats.map(plat => (
+        <Plat key={plat.id} nom={langue === 'fr' ? plat.nom_fr : plat.nom_en} prix={plat.prix} />
+      ))}
     </div>
   );
 }
