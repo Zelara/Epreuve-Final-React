@@ -54,5 +54,5 @@ La liste des fonctionnalités à implémenter suivent, et une démo de la soluti
 ## ############### BUT WAIT ... ############### ##
 >Veux-tu recevoir un point boni *facile, simple, gratuit* ? Rempli le sondage d'évaluation du cours avant de quitter la classe et je t'ajoute un point boni c'est aussi simple que ça : https://forms.gle/DvTt4pbCfnXcoPVx5  🙏 💝 🙏
 
-(Le sondage est entièrement anonyme ; les résultats sont accessibles uniquement à moi ; il me serve pour faire un bilan du cours ; je partage un résumé avec mes collègues enseignants pour améliorer le cours)
+(Le sondage est entièrement anonyme ; les résultats sont accessibles uniquement à moi ; ils me servent pour faire mon propre bilan du cours et m'améliorer ; je partage un résumé avec mes collègues enseignants)
 ## ############################################ ##
