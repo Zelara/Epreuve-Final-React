@@ -1,5 +1,5 @@
 ##### Une fois l'étape 4 complétée, remplacez l'URL du lien sur la ligne suivante par votre URL de solution sur `Firebase Hosting` : 
->[Lien à votre Solution sur `Firebase Hosting`](https://en.wikipedia.org/wiki/LOLCODE)
+>[Lien à votre Solution sur `Firebase Hosting`](https://exfinalreact.web.app/)
 
 # Examen final (20 %)
 >Travail STRICTEMENT individuel
