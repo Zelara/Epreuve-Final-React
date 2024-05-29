@@ -8,7 +8,7 @@ export default function Appli() {
   // Récupérer la langue choisie depuis localStorage ou initialiser à "fr" par défaut
   const [langue, setLangue] = useState(localStorage.getItem("langue") || "fr");
 
-  // Mettre à jour localStorage lorsque la langue change
+  // Mettre à jour localStorage lorsque la langue change.
   useEffect(() => {
     localStorage.setItem("langue", langue);
   }, [langue]);
