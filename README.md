@@ -35,10 +35,10 @@ La liste des fonctionnalités à implémenter suivent, et une démo de la soluti
 4. **Hébergement sur `Firebase Hosting` (2 points)**
     1. **Compilez** votre projet pour obtenir le dossier de l'application à déployer (`dist`) 
     1. Configurez `Firebase Hosting` pour votre projet et déployez votre appli... suivez les instructions dans votre compte `Firebase` en ligne ; mais voici un rappel de la procédure générale :
-      1. Installer les `outils` `Firebase` (si ce n'était pas déjà fait)
-      1. Compléter la commande `firebase login`
-      1. Compléter la commande `firebase init` 
-      1. Compléter la commande `firebase deploy`
+        1. Installer les `outils` `Firebase` (si ce n'était pas déjà fait)
+        1. Compléter la commande `firebase login`
+        1. Compléter la commande `firebase init` 
+        1. Compléter la commande `firebase deploy`
     1. Vérifiez que votre URL d’hébergement fonctionne correctement ;
     1. Ajoutez l’URL de votre site hébergé en haut de ce fichier `README.md` à l’endroit clairement identifié ;-)
 
