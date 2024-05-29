@@ -50,3 +50,7 @@ La liste des fonctionnalités à implémenter suivent, et une démo de la soluti
     3. Vérifiez auprès de moi que votre dépôt de remise contient la sauvegarde appropriée.
 
 ### Gardez une copie personnelle de votre travail : le dépôt de remise sur `582-4PA` sera supprimé une fois la correction complétée et les notes publiées.
+
+## ############### BUT WAIT ... ############### ##
+>Veux-tu recevoir un point boni *sans aucun effort* consenti ? Rempli le sondage d'évaluation du cours : https://forms.gle/DvTt4pbCfnXcoPVx5  🙏 💝 🙏
+## ############################################ ##
